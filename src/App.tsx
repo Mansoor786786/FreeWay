@@ -10,6 +10,7 @@ import Lookup from './pages/Lookup';
 import Results from './pages/Results';
 import Stats from './pages/Stats';
 import BulkNotify from './pages/BulkNotify';
+import MessagingApp from './pages/MessagingApp';
 
 // Context
 import { AppProvider } from './context/AppContext';
@@ -28,6 +29,7 @@ function App() {
               <Route path="/results" element={<Results />} />
               <Route path="/stats" element={<Stats />} />
               <Route path="/bulk-notify" element={<BulkNotify />} />
+              <Route path="/messaging" element={<MessagingApp />} />
             </Routes>
             <Toaster position="top-center" />
           </div>

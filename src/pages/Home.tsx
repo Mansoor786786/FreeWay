@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Car, Search, Users, Shield } from 'lucide-react';
+import { Car, Search, Users, Shield, MessageSquare } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 
 export default function Home() {
@@ -121,6 +121,28 @@ export default function Home() {
                   </p>
                   <Button variant="outline" className="w-full">
                     Search Now
+                  </Button>
+                </motion.div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer group md:col-span-2">
+              <CardContent className="p-8">
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => navigate('/messaging')}
+                  className="space-y-4"
+                >
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-purple-200 transition-colors">
+                    <MessageSquare className="h-8 w-8 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900">Communication Hub</h3>
+                  <p className="text-gray-600">
+                    Advanced messaging and calling platform with real-time chat, voice calls, and smart features.
+                  </p>
+                  <Button variant="outline" className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white border-0 hover:from-purple-600 hover:to-blue-600">
+                    Open Messaging App
                   </Button>
                 </motion.div>
               </CardContent>
