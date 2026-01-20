@@ -5,20 +5,7 @@ import { useMessaging } from '@/context/MessagingContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { 
-  Phone, 
-  Video, 
-  MoreVertical, 
-  Send, 
-  Paperclip, 
-  Smile,
-  Mic,
-  Image as ImageIcon,
-  Reply,
-  Forward,
-  Copy,
-  Trash2
-} from 'lucide-react';
+import { Phone, Video, MoveVertical as MoreVertical, Send, Paperclip, Smile, Mic, Image as ImageIcon, Reply, Forward, Copy, Trash2 } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
